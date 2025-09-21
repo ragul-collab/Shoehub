@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav {
+  background-color: #87726D;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: black;
+  transition: 0.3s;
+}
+
+/* SEARCHBAR */
+.searchbar {
+  padding: 20px;
+  text-align: center;
+}
+
+.searchbar input {
+  border: #575757 1px solid;
+  border-radius: 3px;
+  width: 50%;
+  max-width: 400px;
+  padding: 8px;
+}
+
+/* PRODUCT SECTION */
+#products h1 {
+  margin: 15px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.box {
+  border: black 2px solid;
+  display: flex;
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 900px;
+  gap: 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.box:hover {
+  background-color: #ddd;
+  transform: scale(1.02);
+}
+
+.box img {
+  width: 40%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.productinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ORDER BUTTON */
+.order-btn {
+  width: fit-content;
+  padding: 8px 14px;
+  background: #FF3700;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.order-btn:hover {
+  background: darkred;
+}
+
+/* ABOUT US */
+.ab {
+  text-align: center;
+  padding: 15px;
+  text-decoration: underline;
+}
+
+.para {
+  border: black 2px solid;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* CONTACT */
+.h1 {
+  text-align: center;
+  padding: 15px;
+  text-decoration: underline;
+}
+
+.contact {
+  border: black 2px solid;
+  text-align: center;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.contact a img {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.contact a {
+  display: inline-block;
+  margin: 8px 0;
+  color: black;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .box img {
+    width: 80%;
+  }
+
+  .searchbar input {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav h1 {
+    font-size: 18px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .order-btn {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .box img {
+    width: 100%;
+  }
+}
